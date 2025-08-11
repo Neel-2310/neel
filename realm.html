@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RM Fan</title>
+    <style>
+        
+        body{font-family:Arial,sans-serif;margin:0;background:#f0f2f5;color:#333}
+        
+        header{background:#00529F;color:white;padding:10px;text-align:center}
+        header h1{margin:0;font-size:1.8em}
+        nav ul{list-style:none;padding:0;display:flex;justify-content:center}
+        nav li{margin:0 8px}
+        nav a{color:white;text-decoration:none}
+        .hero{background:url('https://placehold.co/600x150/000/FFF?text=Bernabeu')center/cover;height:150px;display:flex;align-items:center;justify-content:center;color:white;text-align:center;position:relative}
+        .hero::before{content:'';background:rgba(0,0,0,0.5);position:absolute;top:0;left:0;width:100%;height:100%}
+        .hero-content{position:relative;z-index:1}
+        .hero-content h2{font-size:2em;margin:0}
+        section{padding:20px 10px;text-align:center}
+        section:nth-of-type(even){background:#e0e0e0}
+        h3{color:#00529F;font-size:1.5em;margin-bottom:10px;border-bottom:1px solid #FFD700;display:inline-block} 
+        
+        /* New styles for side-by-side player cards */
+        .player-cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card-item{background:white;padding:10px;border-radius:5px;box-shadow:0 1px 2px rgba(0,0,0,0.1);max-width:250px}
+        .card-item img{width:100%;height:100px;object-fit:cover;border-radius:3px}
+        table{width:90%;border-collapse:collapse;margin:10px auto;background:white;border-radius:5px;box-shadow:0 1px 2px rgba(0,0,0,0.1)}
+        table th,table td{padding:8px;border-bottom:1px solid #ddd;text-align:left;font-size:0.8em}
+        table th{background:#eee}
+        .media-item{background:white;padding:10px;border-radius:5px;box-shadow:0 1px 2px rgba(0,0,0,0.1);margin:10px auto;max-width:300px}
+        .video-wrapper{position:relative;padding-bottom:56.25%;height:0;overflow:hidden}
+        .video-wrapper iframe{position:absolute;top:0;left:0;width:100%;height:100%}
+        audio{width:100%;margin-top:5px}
+        footer{background:#1a202c;color:#bbb;text-align:center;padding:10px;font-size:0.8em}
+        footer a{color:#bbb;text-decoration:none}
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://play-lh.googleusercontent.com/TE9E4vjeKtWDuJFYl2UxcSzCQxhB7cJc2r01vb-W53MErK1qRHcXCPf8ukpZGr8mnQ" alt="RM Logo" style="border-radius:50%;">
+        <h1>My RM Fan Page!</h1>
+        <nav><ul><li><a href="#about">About</a></li><li><a href="#squad">Players</a></li><li><a href="#games">Games</a></li><li><a href="#media">Media</a></li></ul></nav>
+    </header>
+    <section id="home" class="hero"><div class="hero-content"><h2>¡Hala Madrid!</h2></div></section>
+    
+    <section id="about">
+        <h3>About the Club</h3>
+        <p>Real Madrid Club de Fútbol, commonly known as Real Madrid, is a professional football club based in Madrid, Spain. Founded on March 6, 1902, the club has a rich history and is widely regarded as one of the most successful and prestigious teams in the world. They play their home matches at the Santiago Bernabéu Stadium and are known for their iconic all-white home kit. With numerous domestic and international titles, including a record number of UEFA Champions League trophies, the club has a dedicated global fanbase.</p>
+    </section>
+
+    <section id="squad">
+        <h3>Players</h3>
+        <div class="player-cards-container">
+            <div class="card-item"><img src="https://placehold.co/150x100/00529F/FFF?text=Mbappe" alt="Mbappé"><h4>K. Mbappé</h4><p>Forward</p></div>
+            <div class="card-item"><img src="https://placehold.co/150x100/00529F/FFF?text=Vinicius" alt="Vinícius Jr."><h4>V. Vinícius Jr.</h4><p>Forward</p></div>
+            <div class="card-item"><img src="https://placehold.co/150x100/00529F/FFF?text=Bellingham" alt="Bellingham"><h4>J. Bellingham</h4><p>Midfielder</p></div>
+            <div class="card-item"><img src="https://placehold.co/150x100/00529F/FFF?text=Rodrygo" alt="Rodrygo"><h4>R. Rodrygo</h4><p>Forward</p></div>
+            <div class="card-item"><img src="https://placehold.co/150x100/00529F/FFF?text=Modric" alt="Modrić"><h4>L. Modrić</h4><p>Midfielder</p></div>
+            <div class="card-item"><img src="https://placehold.co/150x100/00529F/FFF?text=Courtois" alt="Courtois"><h4>T. Courtois</h4><p>Goalkeeper</p></div>
+            <div class="card-item"><img src="https://placehold.co/150x100/00529F/FFF?text=Alaba" alt="Alaba"><h4>D. Alaba</h4><p>Defender</p></div>
+            <div class="card-item"><img src="https://placehold.co/150x100/00529F/FFF?text=Valverde" alt="Valverde"><h4>F. Valverde</h4><p>Midfielder</p></div>
+        </div>
+    </section>
+    <section id="games">
+        <h3>Games (2026)</h3>
+        <table><thead><tr><th>Date</th><th>Opponent</th></tr></thead><tbody><tr><td>Jul 20</td><td>Club America</td></tr><tr><td>Jul 23</td><td>Barcelona</td></tr><tr><td>Jul 26</td><td>AC Milan</td></tr><tr><td>Aug 02</td><td>Chelsea</td></tr><tr><td>Aug 09</td><td>Bayern Munich</td></tr><tr><td>Aug 16</td><td>Manchester City</td></tr></tbody></table>
+    </section>
+    <section id="media">
+        <h3>Media</h3>
+        <div class="media-item"><h4>Highlights</h4><div class="video-wrapper"><iframe src="https://youtu.be/elnrftCjt9M" frameborder="0" allowfullscreen></iframe></div></div>
+        <div class="media-item"><h4>Anthem</h4><audio controls><source src="https://www.xclusiveloaded.net/songs/bad-nova-hala-madrid-2025-edition"></audio></div>
+    </section>
+    <footer><p>© 2025 RM Fan Page. By a student.</p></footer>
+</body>
+</html>
